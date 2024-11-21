@@ -13,6 +13,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.example.latihan5.model.ListGender
+import com.example.latihan5.ui.view.DetailMahasiswaView
 import com.example.latihan5.ui.view.FormMahasiswaView
 
 enum class Halaman{
@@ -41,12 +42,12 @@ fun Navigasi(
                         konteks.getString(id)
                     },
                     onSubmitClick = {
-                        viewModel.savedDataMhs(it)
+                        viewModel.saveDataMhs(it)
                         navHost.navigate(Halaman.Data.name)
                     }
                 )
-
             }
+
         }
     }
 }
