@@ -37,6 +37,7 @@ fun FormMahasiswaView(
 
 ) {
     var nama by remember { mutableStateOf("") }
+    var nim by remember { mutableStateOf("") }
     var email by remember { mutableStateOf("") }
     var noTelepon by remember { mutableStateOf("") }
     var alamat by remember { mutableStateOf("") }
