@@ -47,7 +47,15 @@ fun Navigasi(
                     }
                 )
             }
-
+            composable(route = Halaman.Data.name) {
+                DetailMahasiswaView(
+                    dataMhs = uiState,
+                    modifier = Modifier,
+                    onBackButtonClicked = {
+                        navHost.popBackStack()
+                    }
+                )
+            }
         }
     }
 }
